@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.screen {
+    display: flex;
+    height: 100vh;
+}
+
+.leftside {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftside img {
+    max-width: 100%;
+    height: auto;
+}
+
+.rightside {
+    width: 450px;
+    background-color: #2f2e41;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #FFF;
+}
+
+.rightside label {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.rightside input {
+    width: 100%;
+    border: 1px solid #9998a2;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 15px;
+    outline: 0;
+    margin-top: 3px;
+}
+
+.rightside input[type=submit] {
+    background-color: #57b894;
+    border: none;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.rightside input[type=submit]:hover {
+    background-color: #4ea685;
+}
+
+.rightside .login a {
+    text-decoration: none;
+    color: #57b894;
+    font-weight: bold;
+}
+
+.sociais {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.sociais i {
+    padding: 0 10px;
+}
+
+.sociais i:hover {
+    color: #57b894;
+}
+
+.sociais a {
+    color: #FFF;
+}
+
+.error {
+    font-size: 11px;
+    background-color: #FF0000;
+    color: #FFF;
+    padding: 4px;
+    border-radius: 5px;
+    margin-top: 3px;
+}

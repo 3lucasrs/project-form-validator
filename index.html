@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto: Validador de Formulário</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/13cc0479e1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="screen">
+        <div class="leftside">
+            <img src="assets/images/financial_data.png" alt="imagem">
+        </div>
+
+        <div class="rightside">
+            <h1>CRIE UMA CONTA</h1>
+            <form method="POST" action="index.html" class="validator">
+                <label for="name">
+                    Seu nome: <br />
+                    <input type="text" name="name" id="name" data-rules="required;min=2">
+                </label>
+                <label for="email">
+                    Seu e-mail: <br />
+                    <input type="email" name="email" id="email" data-rules="required;email">
+                </label>
+                <label for="password">
+                    Sua senha: <br />
+                    <input type="password" name="password" id="password" data-rules="required;min=6">
+                </label>
+                <label for="">
+                    <input type="submit" value="CADASTRAR">
+                </label>
+            </form>
+            <div class="login">
+                Já tem uma conta? <a href="#">Faça o Login</a>
+            </div>
+            <div class="sociais">
+                <a href="https://www.instagram.com/3lucasrs/"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                <a href="https://github.com/3lucasrs/"><i class="fa-brands fa-github fa-2x"></i></a>
+                <a href="https://www.linkedin.com/in/3lucasrs/"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
